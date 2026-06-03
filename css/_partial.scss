@@ -17,13 +17,16 @@ $body-text-font:"roboto-slab",serif;
 }
 
 @mixin btn($pad:15px 10px 10px 10px){
-    border: solid 1px $border-color;
+    border: solid 1px linear-gradient(90deg,#ECA6A8,#B62B70,#15572A);
     border-radius: 10px;
+    
     text-align: center;
     padding: $pad;
     text-decoration: none;
     color:$text-color;
-    background-color: transparent;
+    font-family: $body-text-font;
+    font-weight: 500;
+    // background-color: transparent;
     
 
     &:hover{

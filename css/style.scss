@@ -12,12 +12,12 @@ body{
     
     h1,h2{
         font-weight: 700;
-    }
-
-    
+    }   
 }
 
-header{
+// ---------------------------navgationen--------------------------
+
+header nav{
     background-color: partial.$section-color;
     border-bottom: solid 15px partial.$primary-color;
     @include partial.flex($justify:space-between);
@@ -42,17 +42,52 @@ header{
             font-family: partial.$Heading-font;
             font-weight: 600;
             font-size: 22px;
+            &:hover{
+                color: partial.$secondary-color;   
+            }
+
         }
     }
 
     .right-ikoner{
         @include partial.flex($justify:space-between);
-        gap:20px;
+        gap:40px;
+
+        .fa-bag-shopping, .fa-user-lock, .fa-magnifying-glass {
+            font-size: 25px;
+            color: partial.$text-color;
+        }
     }
     .right-bar{
         @include partial.flex($justify:space-between);
         gap:10px;
     }
+}
+
+// -------------------hero section-------------------------
+.hero-sec{
+    @include partial.flex($align:center);
+    flex-direction: column;
+    margin-top: 3rem;
+   
+
+    h1{
+        color:partial.$text-color;
+        font-family: partial.$Heading-font;
+        font-size: 40px;
+    }
+
+    p{
+        color:partial.$secondary-color;
+        font-size: 20px;
+    }
+
+    a{
+        @include partial.btn($pad:10px 20px 10px 20px);
+        margin-top: 1rem;
+
+    }
+
 }
 
 
