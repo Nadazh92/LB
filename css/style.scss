@@ -3,7 +3,58 @@
 body{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    background-color: partial.$bg-color;
+
+    main{
+        margin:0 5rem;
+    }
+    
+    h1,h2{
+        font-weight: 700;
+    }
+
     
 }
+
+header{
+    background-color: partial.$section-color;
+    border-bottom: solid 15px partial.$primary-color;
+    @include partial.flex($justify:space-between);
+    padding: 1rem 1.5rem;
+    color:partial.$text-color;
+    
+
+    img{
+        height:120px;
+        width:120px;
+    }
+
+    ul{
+        @include partial.flex($justify:space-between);
+        gap:20px;
+        list-style-type: none;
+        
+        li a{
+
+            text-decoration: none;
+            color:partial.$text-color;
+            font-family: partial.$Heading-font;
+            font-weight: 600;
+            font-size: 22px;
+        }
+    }
+
+    .right-ikoner{
+        @include partial.flex($justify:space-between);
+        gap:20px;
+    }
+    .right-bar{
+        @include partial.flex($justify:space-between);
+        gap:10px;
+    }
+}
+
+
+
 
