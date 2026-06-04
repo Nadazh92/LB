@@ -15,7 +15,9 @@ body{
     
     h1,h2{
         font-weight: 700;
-    }   
+    }  
+    
+
 }
 
 // ---------------------------navgationen--------------------------
@@ -302,23 +304,123 @@ header nav{
         #blog-info{
                 color:rgb(199, 197, 197); 
             }
+
+            .fa-eye{
+                padding-left: 30px;
+                 
+            }
     }
 }
 
 .blog2og3{
-    background-color: partial.$section-color;
+    // background-color: partial.$section-color;
     border-radius: 10px;
     @include partial.flex($justify:flex-start);
     gap:10px;
+    
 
-    img{
+    
+
+    .blog{
+        background-color: partial.$section-color;
+        @include partial.flex($align:center);
+        flex-direction: column;
+        margin-bottom: 2rem;
+      
+
+        img{
         height:50vh;
         width:90vh;
         object-fit: cover;
-    }
-    
+          }
 
+         div h2{
+            margin-left: 2rem;
+            color:partial.$secondary-color;
+            font-size: 32px;
+            font-family: partial.$Heading-font;
+    }
+
+          div p{
+            color:partial.$text-color;
+            font-size: 20px;
+            font-family: partial.$body-text-font;
+            margin-left: 2rem;
+            
+         
+            a{
+                text-decoration: none;
+                color:partial.$secondary-color;
+            }
+  
+        }
+
+            #blog-info{
+                color:rgb(199, 197, 197); 
+                padding-top: 2rem;
+            }
+
+            .fa-eye{
+                padding-left: 30px;
+                 
+            }
+
+    }      
 }
+
+#seblogs{
+            @include partial.btn(5px 40px 5px 40px);
+            font-size: 15px;
+            text-decoration: none;
+            position: absolute;
+            left: 45%;
+            right: auto;
+          }
+
+.insta-sec{
+
+    background-color: partial.$section-color;
+    @include partial.flex($align:center);
+    flex-direction: column;
+    margin-top: 8rem;
+    
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    div{
+       @include partial.flex($justify:center); 
+       gap: 20px;
+
+       img{
+        height:50vh;
+        width:25vw;
+        object-fit: cover;
+        border: solid 2px transparent;
+        border-radius: 10px;
+        background:
+        linear-gradient(white, white) padding-box,
+        partial.$border-color border-box;
+       }
+
+       
+    }
+
+    p{
+        height:50vh;
+        width: 25vw;
+        text-align: center;
+        font-size: 25px;
+        font-family: partial.$Heading-font;
+        color: partial.$secondary-color;
+        @include partial.flex($align:center,$justify:center);
+        flex-direction: column; 
+       }
+    .fa-instagram{
+            font-size: 50px;
+            
+        }
+}
+
 
 
 

@@ -317,18 +317,115 @@ header nav .right-bar {
 .blog1 div #blog-info {
   color: rgb(199, 197, 197);
 }
+.blog1 div .fa-eye {
+  padding-left: 30px;
+}
 
 .blog2og3 {
-  background-color: #FFFFFF;
   border-radius: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
-.blog2og3 img {
+.blog2og3 .blog {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.blog2og3 .blog img {
   height: 50vh;
   width: 90vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.blog2og3 .blog div h2 {
+  margin-left: 2rem;
+  color: #B62B70;
+  font-size: 32px;
+  font-family: "eb-garamond", serif;
+}
+.blog2og3 .blog div p {
+  color: #443A3A;
+  font-size: 20px;
+  font-family: "roboto-slab", serif;
+  margin-left: 2rem;
+}
+.blog2og3 .blog div p a {
+  text-decoration: none;
+  color: #B62B70;
+}
+.blog2og3 .blog #blog-info {
+  color: rgb(199, 197, 197);
+  padding-top: 2rem;
+}
+.blog2og3 .blog .fa-eye {
+  padding-left: 30px;
+}
+
+#seblogs {
+  border: solid 2px transparent;
+  border-radius: 10px;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  text-align: center;
+  padding: 5px 40px 5px 40px;
+  text-decoration: none;
+  color: #443A3A;
+  font-family: "roboto-slab", serif;
+  font-weight: 500;
+}
+#seblogs:hover {
+  background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  color: #FFFFFF;
+}
+#seblogs {
+  font-size: 15px;
+  text-decoration: none;
+  position: absolute;
+  left: 45%;
+  right: auto;
+}
+
+.insta-sec {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.insta-sec div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.insta-sec div img {
+  height: 50vh;
+  width: 25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: solid 2px transparent;
+  border-radius: 10px;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+}
+.insta-sec p {
+  height: 50vh;
+  width: 25vw;
+  text-align: center;
+  font-size: 25px;
+  font-family: "eb-garamond", serif;
+  color: #B62B70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.insta-sec .fa-instagram {
+  font-size: 50px;
 }/*# sourceMappingURL=style.css.map */
