@@ -260,4 +260,75 @@ header nav .right-bar {
 .produkter-sec .styl-pro div #lægikurv {
   margin-left: 1.5rem;
   margin-bottom: 2rem;
+}
+.produkter-sec #seAlle {
+  border: solid 2px transparent;
+  border-radius: 10px;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  text-align: center;
+  padding: 5px 40px 5px 40px;
+  text-decoration: none;
+  color: #443A3A;
+  font-family: "roboto-slab", serif;
+  font-weight: 500;
+}
+.produkter-sec #seAlle:hover {
+  background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  color: #FFFFFF;
+}
+.produkter-sec #seAlle {
+  margin-top: 2rem;
+  font-size: 15px;
+  margin-bottom: 6rem;
+}
+
+.blog1 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.blog1 img {
+  height: 60vh;
+  width: 180vw;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.blog1 div {
+  margin-left: 2rem;
+}
+.blog1 div h2 {
+  color: #B62B70;
+  font-size: 32px;
+  font-family: "eb-garamond", serif;
+}
+.blog1 div p {
+  color: #443A3A;
+  font-size: 20px;
+  font-family: "roboto-slab", serif;
+  margin-bottom: 3rem;
+}
+.blog1 div p a {
+  text-decoration: none;
+  color: #B62B70;
+}
+.blog1 div #blog-info {
+  color: rgb(199, 197, 197);
+}
+
+.blog2og3 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.blog2og3 img {
+  height: 50vh;
+  width: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
