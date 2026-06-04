@@ -17,8 +17,11 @@ $body-text-font:"roboto-slab",serif;
 }
 
 @mixin btn($pad:15px 10px 10px 10px){
-    border: solid 1px linear-gradient(90deg,#ECA6A8,#B62B70,#15572A);
+    border: solid 1px transparent;
     border-radius: 10px;
+     background:
+        linear-gradient(white, white) padding-box,
+        $border-color border-box;
     
     text-align: center;
     padding: $pad;
@@ -30,7 +33,9 @@ $body-text-font:"roboto-slab",serif;
     
 
     &:hover{
-        background-color: $hover;
+        background:
+        linear-gradient($hover,$hover) padding-box,
+        $border-color border-box;
         color:$section-color;
     }
 

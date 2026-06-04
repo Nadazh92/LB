@@ -7,6 +7,8 @@ body {
 }
 body main {
   margin: 0 5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 body h1, body h2 {
   font-weight: 700;
@@ -71,24 +73,109 @@ header nav .right-bar {
   font-family: "eb-garamond", serif;
   font-size: 40px;
 }
-.hero-sec p {
+.hero-sec span {
   color: #B62B70;
-  font-size: 20px;
+  font-size: 23px;
 }
 .hero-sec a {
-  border: solid 1px linear-gradient(90deg, #ECA6A8, #B62B70, #15572A);
+  border: solid 1px transparent;
   border-radius: 10px;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
   text-align: center;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 30px 10px 30px;
   text-decoration: none;
   color: #443A3A;
   font-family: "roboto-slab", serif;
   font-weight: 500;
 }
 .hero-sec a:hover {
-  background-color: #15572A;
+  background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
   color: #FFFFFF;
 }
 .hero-sec a {
-  margin-top: 1rem;
+  margin-top: 3.5rem;
+}
+
+.ani-slide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 3rem;
+  animation: slidemov 5s linear infinite;
+}
+@keyframes slidemov {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.ani-slide img {
+  height: 300px;
+  width: 300px;
+}
+
+.hvorfor-sec {
+  background-color: #FFFFFF;
+  border: solid 0px white;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+.hvorfor-sec h1 {
+  text-align: center;
+  color: #B62B70;
+  font-size: 40px;
+  font-family: "eb-garamond", serif;
+  padding-top: 2rem;
+}
+.hvorfor-sec .punkter-del {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+.hvorfor-sec .punkter-del img {
+  height: 30px;
+  width: 30px;
+  padding-right: 1rem;
+}
+.hvorfor-sec .punkter-del p {
+  font-family: "roboto-slab", serif;
+  font-size: 25px;
+  color: #443A3A;
+}
+.hvorfor-sec .ikon-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.hvorfor-sec .ikon-sec .ikoner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+.hvorfor-sec .ikon-sec .ikoner .fa-user-doctor, .hvorfor-sec .ikon-sec .ikoner .fa-staff-snake, .hvorfor-sec .ikon-sec .ikoner .fa-flask {
+  color: #B62B70;
+  font-size: 70px;
+}
+.hvorfor-sec .ikon-sec .ikoner img {
+  height: 70px;
+  width: 70px;
+}
+.hvorfor-sec .ikon-sec .ikon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.hvorfor-sec .ikon-sec .ikon-text p {
+  font-size: 20px;
+  font-family: "roboto-slab", serif;
+  color: #443A3A;
 }/*# sourceMappingURL=style.css.map */
