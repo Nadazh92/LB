@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Varaibles */
 body {
   box-sizing: border-box;
@@ -69,16 +70,18 @@ header nav .right-bar {
   margin-top: 3rem;
 }
 .hero-sec h1 {
+  text-align: center;
   color: #443A3A;
-  font-family: "eb-garamond", serif;
   font-size: 40px;
+  font-family: "eb-garamond", serif;
+  padding-top: 2rem;
 }
 .hero-sec span {
   color: #B62B70;
   font-size: 23px;
 }
 .hero-sec a {
-  border: solid 1px transparent;
+  border: solid 2px transparent;
   border-radius: 10px;
   background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
   text-align: center;
@@ -162,11 +165,11 @@ header nav .right-bar {
 }
 .hvorfor-sec .ikon-sec .ikoner .fa-user-doctor, .hvorfor-sec .ikon-sec .ikoner .fa-staff-snake, .hvorfor-sec .ikon-sec .ikoner .fa-flask {
   color: #B62B70;
-  font-size: 70px;
+  font-size: 60px;
 }
 .hvorfor-sec .ikon-sec .ikoner img {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
 }
 .hvorfor-sec .ikon-sec .ikon-text {
   display: flex;
@@ -178,4 +181,83 @@ header nav .right-bar {
   font-size: 20px;
   font-family: "roboto-slab", serif;
   color: #443A3A;
+}
+
+.produkter-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.produkter-sec h1 {
+  text-align: center;
+  color: #443A3A;
+  font-size: 40px;
+  font-family: "eb-garamond", serif;
+  padding-top: 2rem;
+}
+.produkter-sec span {
+  color: #B62B70;
+  font-size: 23px;
+  margin-bottom: 2rem;
+}
+.produkter-sec .styl-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1rem;
+}
+.produkter-sec .styl-pro div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.produkter-sec .styl-pro div img {
+  height: 400px;
+  width: 550px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.produkter-sec .styl-pro div p {
+  margin-left: 1.5rem;
+  font-size: 25px;
+  color: #443A3A;
+  font-family: "roboto-slab", serif;
+}
+.produkter-sec .styl-pro div p a {
+  font-size: 15px;
+  color: #B62B70;
+  text-decoration: none;
+}
+.produkter-sec .styl-pro div span {
+  margin-left: 1.5rem;
+  font-size: 12px;
+  color: #443A3A;
+}
+.produkter-sec .styl-pro div span .fa-star {
+  color: #B62B70;
+  font-size: 25px;
+}
+.produkter-sec .styl-pro div #lægikurv {
+  border: solid 2px transparent;
+  border-radius: 10px;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  text-align: center;
+  padding: 10px 200px 10px 200px;
+  text-decoration: none;
+  color: #443A3A;
+  font-family: "roboto-slab", serif;
+  font-weight: 500;
+}
+.produkter-sec .styl-pro div #lægikurv:hover {
+  background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  color: #FFFFFF;
+}
+.produkter-sec .styl-pro div #lægikurv {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */

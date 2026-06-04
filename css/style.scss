@@ -75,9 +75,8 @@ header nav{
    
 
     h1{
-        color:partial.$text-color;
-        font-family: partial.$Heading-font;
-        font-size: 40px;
+        
+        @include partial.heading1(partial.$text-color);
     }
 
     span{
@@ -124,11 +123,7 @@ header nav{
     margin-top: 2rem;
 
     h1{
-        text-align: center;
-        color:partial.$secondary-color;
-        font-size: 40px;
-        font-family: partial.$Heading-font;
-        padding-top: 2rem;
+        @include partial.heading1(partial.$secondary-color);
     }
 
         .punkter-del{
@@ -161,12 +156,12 @@ header nav{
                  
                 .fa-user-doctor, .fa-staff-snake, .fa-flask{
                  color:partial.$secondary-color;
-                  font-size: 70px;
+                  font-size: 60px;
                 }
 
                  img{
-                 height: 70px;
-                width: 70px;
+                 height: 60px;
+                width: 60px;
                   }
             }
           
@@ -187,6 +182,79 @@ header nav{
 }
 
 //--------------------Populære Varer------------------
+
+.produkter-sec{
+         @include partial.flex($align:center);
+          flex-direction: column;
+
+          h1{
+           @include partial.heading1(partial.$text-color);
+
+          }
+          
+           span{
+            color:partial.$secondary-color;
+            font-size: 23px;
+            margin-bottom: 2rem;
+            
+          }
+
+          .styl-pro{
+            @include partial.flex($justify:center);
+            gap:20px;
+            margin-top: 1rem;
+
+            div{
+                @include partial.flex($align:flex-start);
+                flex-direction: column;
+                background-color: partial.$section-color;
+                border-radius: 10px;
+
+                img{
+                height:400px;
+                width:550px;
+                object-fit: contain;
+                    }
+
+                p{
+                    margin-left: 1.5rem;
+                    font-size: 25px;
+                    color:partial.$text-color;
+                    font-family: partial.$body-text-font;
+
+                    a{
+                        font-size: 15px;
+                        color:partial.$secondary-color;
+                        text-decoration: none;
+                    }
+                
+                    }
+
+                span{
+                    margin-left: 1.5rem;
+                    font-size: 12px;
+                    color:partial.$text-color;
+                    .fa-star{
+                        color:partial.$secondary-color;
+                        font-size: 25px;
+                    }
+                        
+                    }
+
+                #lægikurv{
+                 @include partial.btn(10px 200px 10px 200px);
+                 margin-left: 1.5rem;
+                 margin-bottom: 2rem;
+                    }
+                
+            }
+           
+ 
+          }
+
+       
+  
+}
 
 
 

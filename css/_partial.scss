@@ -17,7 +17,7 @@ $body-text-font:"roboto-slab",serif;
 }
 
 @mixin btn($pad:15px 10px 10px 10px){
-    border: solid 1px transparent;
+    border: solid 2px transparent;
     border-radius: 10px;
      background:
         linear-gradient(white, white) padding-box,
@@ -29,6 +29,7 @@ $body-text-font:"roboto-slab",serif;
     color:$text-color;
     font-family: $body-text-font;
     font-weight: 500;
+    
     // background-color: transparent;
     
 
@@ -39,4 +40,12 @@ $body-text-font:"roboto-slab",serif;
         color:$section-color;
     }
 
+}
+
+@mixin heading1($clor:$text-color){
+           text-align: center;
+           color:$clor;
+           font-size: 40px;
+           font-family:$Heading-font;
+           padding-top: 2rem;
 }
