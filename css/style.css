@@ -425,7 +425,75 @@ header nav .right-bar {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: solid 2px transparent;
+  border-radius: 10px;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
 }
 .insta-sec .fa-instagram {
   font-size: 50px;
+}
+
+footer {
+  background-color: #FFFFFF;
+  border-top: solid 15px #ECA6A8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+footer .styl-brandname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .styl-brandname img {
+  height: 150px;
+  width: 150px;
+  padding-right: 1rem;
+}
+footer .styl-brandname h1 {
+  color: #443A3A;
+  font-size: 100px;
+  font-family: "eb-garamond", serif;
+  font-weight: 500;
+}
+footer .footer-indhold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+footer .footer-indhold p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "roboto-slab", serif;
+}
+footer .footer-indhold h4 {
+  font-size: 25px;
+  font-family: "eb-garamond", serif;
+  font-style: normal;
+  color: #B62B70;
+  text-align: center;
+}
+footer .footer-indhold p a {
+  text-decoration: none;
+  color: #443A3A;
+}
+footer .footer-indhold p a:hover {
+  color: #B62B70;
+  border-bottom: solid 1px #B62B70;
+}
+footer .footer2 {
+  border: solid 2px #ECA6A8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+footer .footer2 .fa-facebook-f, footer .footer2 .fa-instagram {
+  color: #B62B70;
+  font-size: 25px;
+  margin-right: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

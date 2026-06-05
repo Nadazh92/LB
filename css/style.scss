@@ -376,7 +376,7 @@ header nav{
             left: 45%;
             right: auto;
           }
-
+// ------------------------------Følg os section-----------------------------
 .insta-sec{
 
     background-color: partial.$section-color;
@@ -414,11 +414,100 @@ header nav{
         color: partial.$secondary-color;
         @include partial.flex($align:center,$justify:center);
         flex-direction: column; 
+        border: solid 2px transparent;
+        border-radius: 10px;
+        background:
+        linear-gradient(white, white) padding-box,
+        partial.$border-color border-box;
        }
     .fa-instagram{
             font-size: 50px;
             
         }
+}
+
+
+// ---------------------Footer----------------------------------
+footer{
+    background-color: partial.$section-color;
+    border-top: solid 15px partial.$primary-color;
+    @include partial.flex($align:center);
+    flex-direction: column;
+    margin-top: 5rem;
+
+    .styl-brandname{
+           @include partial.flex($justify:center);
+
+       img{
+        height: 150px;
+        width: 150px;
+        padding-right: 1rem;
+        }
+        
+        h1{
+            color:partial.$text-color;
+            font-size: 100px;
+            font-family: partial.$Heading-font;
+            font-weight: 500;
+        }
+
+    }
+
+    .footer-indhold{
+        
+        @include partial.flex($justify:center);
+        gap:3rem;
+        
+
+        p{
+            text-align: center;
+            font-size: 18px;
+            font-family: partial.$body-text-font;
+        }
+
+        h4{
+            font-size: 25px;
+            font-family: partial.$Heading-font;
+            font-style: normal;
+            color:partial.$secondary-color;
+            text-align: center;
+
+        }
+
+
+        p a{
+            text-decoration: none;
+            color:partial.$text-color;
+
+            &:hover{
+                color:partial.$secondary-color;
+                border-bottom: solid 1px partial.$secondary-color;
+            }
+        }
+    }
+
+    .footer2{
+        border:solid 2px partial.$primary-color;
+         @include partial.flex($justify:space-between);
+         width:100%;
+         margin-top: 3rem;
+
+         .fa-facebook-f ,.fa-instagram{
+            color:partial.$secondary-color;
+            font-size: 25px;
+            margin-right: 0.5rem;
+         }
+
+    }
+
+
+
+
+
+
+
+
+    
 }
 
 
