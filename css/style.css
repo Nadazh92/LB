@@ -389,6 +389,69 @@ header nav .right-bar {
   right: auto;
 }
 
+.faq-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.faq-sec h1 {
+  text-align: center;
+  color: #443A3A;
+  font-size: 40px;
+  font-family: "eb-garamond", serif;
+  padding-top: 2rem;
+}
+.faq-sec span {
+  color: #B62B70;
+  font-size: 23px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.faq-sec .faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  font-family: "roboto-slab", serif;
+  width: 100%;
+}
+.faq-sec .faq-container .faq-items {
+  padding: 4rem 15rem;
+  color: #443A3A;
+  font-size: 20px;
+}
+.faq-sec .faq-container .faq-items button {
+  border: none;
+  color: #443A3A;
+  text-align: left;
+  border-bottom: solid 1px #ECA6A8;
+  width: 100%;
+  font-family: "roboto-slab", serif;
+  font-size: 30px;
+  background-color: #FFFFFF;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+.faq-sec .faq-container .faq-items p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: none;
+}
+.faq-sec .faq-container .faq-items .answer {
+  display: none;
+}
+.faq-sec .faq-container .faq-items .answer.active {
+  display: block;
+}
+.faq-sec .faq-container .faq-items .fa-plus {
+  color: #B62B70;
+  padding-left: 200px;
+}
+
 .insta-sec {
   background-color: #FFFFFF;
   display: flex;

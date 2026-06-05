@@ -376,6 +376,100 @@ header nav{
             left: 45%;
             right: auto;
           }
+
+
+// -------------------------------FAQ-----------------------
+
+.faq-sec{
+    @include partial.flex($align:center);
+    flex-direction: column;
+    margin-top: 5rem;
+
+    h1{
+        @include partial.heading1(partial.$text-color);
+    }
+
+    span{
+        
+            color:partial.$secondary-color;
+            font-size: 23px;
+            margin-bottom: 2rem;
+            text-align: center;     
+    }
+
+    .faq-container{
+        @include partial.flex($align:flex-start);
+        flex-direction: column;
+        background-color: partial.$section-color;
+        border-radius: 10px;
+        font-family: partial.$body-text-font;
+        width:100%;
+       
+        
+
+            .faq-items {
+               
+                padding: 4rem 15rem;
+                color:partial.$text-color;
+                font-size: 20px;
+    
+                button{
+                border:none;
+                color:partial.$text-color;
+                text-align: left;
+                border-bottom: solid 1px partial.$primary-color;
+                width:100%;
+                font-family: partial.$body-text-font;
+                font-size: 30px;
+                background-color: partial.$section-color;
+                padding-bottom:2rem;
+                margin-bottom: 1rem;
+            }
+
+
+                p{
+                    padding-top: 1rem; 
+                    padding-bottom: 1rem;
+                    display: none;
+  
+                }
+
+                .answer{
+                    display: none;
+                }
+                .answer.active{
+                    display: block;
+                }
+
+                // .question .fa-plus{
+                //     display: inline-block;
+                //     transition: 0.3s ease;
+
+                // }
+                // .question.open .fa-plus{
+                //     transform: rotate(-45deg);
+                // }
+
+                .fa-plus{
+                    color:partial.$secondary-color;
+                    padding-left: 200px;
+                }
+                
+            }
+
+            
+    }
+
+}
+
+
+
+
+
+
+
+
+
 // ------------------------------Følg os section-----------------------------
 .insta-sec{
 
