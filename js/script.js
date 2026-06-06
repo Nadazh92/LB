@@ -14,10 +14,6 @@ e.currentTarget.classList.toggle("open");
 
 }
 
-
-
-
-
 for (let btn of questions){
     btn.addEventListener("click",faq);
     

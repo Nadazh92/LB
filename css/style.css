@@ -449,7 +449,44 @@ header nav .right-bar {
 }
 .faq-sec .faq-container .faq-items .fa-plus {
   color: #B62B70;
-  padding-left: 200px;
+}
+.faq-sec .faq-container .faq-items .fa-xmark {
+  display: none;
+  color: #B62B70;
+}
+.faq-sec .faq-container .faq-items .question {
+  position: relative;
+}
+.faq-sec .faq-container .faq-items .fa-plus, .faq-sec .faq-container .faq-items .fa-xmark {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.faq-sec .faq-container .faq-items .question.open .fa-plus {
+  display: none;
+}
+.faq-sec .faq-container .faq-items .question.open .fa-xmark {
+  display: block;
+}
+.faq-sec #seFAQ {
+  border: solid 2px transparent;
+  border-radius: 10px;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  text-align: center;
+  padding: 5px 40px 5px 40px;
+  text-decoration: none;
+  color: #443A3A;
+  font-family: "roboto-slab", serif;
+  font-weight: 500;
+}
+.faq-sec #seFAQ:hover {
+  background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  color: #FFFFFF;
+}
+.faq-sec #seFAQ {
+  font-size: 15px;
+  margin-top: 3rem;
 }
 
 .insta-sec {
@@ -494,6 +531,28 @@ header nav .right-bar {
 }
 .insta-sec .fa-instagram {
   font-size: 50px;
+}
+
+.reviews-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.reviews-sec .reviews-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.reviews-sec .reviews-container div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 30vw;
 }
 
 footer {

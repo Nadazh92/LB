@@ -62,10 +62,13 @@ header nav{
             font-size: 25px;
             color: partial.$text-color;
         }
+
+        
     }
     .right-bar{
         @include partial.flex($justify:space-between);
         gap:10px;
+        
     }
 }
 
@@ -441,24 +444,52 @@ header nav{
                     display: block;
                 }
 
-                // .question .fa-plus{
-                //     display: inline-block;
-                //     transition: 0.3s ease;
-
-                // }
-                // .question.open .fa-plus{
-                //     transform: rotate(-45deg);
-                // }
+                
 
                 .fa-plus{
                     color:partial.$secondary-color;
-                    padding-left: 200px;
+                    // padding-left: 200px;
+                }
+                .fa-xmark{
+                    display: none;
+                    color:partial.$secondary-color;
+                    // padding-left: 200px;
+                }
+                .question{
+                    position: relative;
+                }
+
+                .fa-plus, .fa-xmark{
+                    position: absolute;
+                    right:0;
+                    top:50%;
+                    transform: translateY(-50%);
+
+
                 }
                 
-            }
+                .question.open .fa-plus{
+                    display:none;
+                 }
 
-            
+                 .question.open .fa-xmark{
+                    display: block;
+                   
+                 }
+
+
+
+            }      
     }
+
+      #seFAQ{
+            @include partial.btn(5px 40px 5px 40px);
+            font-size: 15px;
+            margin-top: 3rem;
+            
+            
+          }
+    
 
 }
 
@@ -518,6 +549,32 @@ header nav{
             font-size: 50px;
             
         }
+}
+// --------------------------------review section------------------------
+
+.reviews-sec{
+
+    @include partial.flex($align:center);
+    flex-direction: column;
+
+    .reviews-container{
+        @include partial.flex($justify:center);
+        gap:2rem;
+
+        
+
+    div{
+       @include partial.flex($align:flex-start);
+       flex-direction: column;
+        background-color: partial.$section-color;
+        border-radius: 10px;
+        width:30vw;
+
+       
+
+
+    }
+     }
 }
 
 
