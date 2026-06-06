@@ -20,6 +20,34 @@ for (let btn of questions){
 }
 
 
+// ----------------Reviews section------------------
+
+const reviewsContainer=document.querySelector(".reviews-container");
+
+const nextBtn=document.querySelector(".btn-next");
+const prevBtn=document.querySelector(".btn-prev");
+
+function nextReview(){
+    reviewsContainer.scrollBy({
+        left:400, 
+        behavior:"smooth"
+
+    });
+}
+
+function prevReview(){
+    reviewsContainer.scrollBy({
+        left:-400, 
+        behavior:"smooth"
+
+    });
+}
+
+
+nextBtn.addEventListener("click", nextReview);
+prevBtn.addEventListener("click", prevReview);
+
+
 
 
 
