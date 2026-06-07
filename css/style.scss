@@ -63,6 +63,14 @@ header nav{
             color: partial.$text-color;
         }
 
+        #bars{
+            background-color: transparent;
+            color:partial.$text-color;
+            font-size: 30px;
+            border:none;
+            display: none;
+        }
+
         
     }
     .right-bar{
@@ -87,6 +95,7 @@ header nav{
     span{
         color:partial.$secondary-color;
         font-size: 23px;
+        text-align: center;
     }
 
     a{
@@ -223,7 +232,7 @@ header nav{
 
                 p{
                     margin-left: 1.5rem;
-                    font-size: 25px;
+                    font-size: 22px;
                     color:partial.$text-color;
                     font-family: partial.$body-text-font;
 
@@ -415,7 +424,6 @@ header nav{
                 padding: 4rem 15rem;
                 color:partial.$text-color;
                 font-size: 20px;
-    
                 button{
                 border:none;
                 color:partial.$text-color;
@@ -495,12 +503,6 @@ header nav{
 
 
 
-
-
-
-
-
-
 // ------------------------------Følg os section-----------------------------
 .insta-sec{
 
@@ -536,7 +538,9 @@ header nav{
         text-align: center;
         font-size: 25px;
         font-family: partial.$Heading-font;
-        color: partial.$secondary-color;
+        font-weight: 700;
+
+        color: partial.$text-color;
         @include partial.flex($align:center,$justify:center);
         flex-direction: column; 
         border: solid 2px transparent;
@@ -547,6 +551,7 @@ header nav{
        }
     .fa-instagram{
             font-size: 50px;
+            color:partial.$secondary-color;
             
         }
 }
@@ -697,15 +702,311 @@ footer{
          }
 
     }
+}
+
+ /* tablet og  mobile  */
+@media screen and (max-width:768px){
+
+     body main{
+         margin:0 1rem;
+       
+    }
+// -------------header og navigation----------------
+   header nav{ 
+        
+        ul{
+            display:none;
+        }
+        
+      .right-ikoner{
+        gap:20px;
+
+        #bars{
+        display: block;
+    
+        }}
+
+      .right-bar{
+        display: none;
+     }
+     
+      ul.show{
+        display: flex; 
+        align-items: flex-start;
+        flex-direction: column;
+        gap:10px;
+        
+
+        position: absolute;
+        top: 155px;
+        left: 0;
+        background-color:partial.$section-color;
+        width:100%;
+        
+       
+
+    }
+      button#bars{
+        background-color: partial.$section-color;
+        border: none;
+        color:partial.$secondary-color;  
+    
+    }
+    }
+//--------------------Hvorfor vælger kvinder Lady Balance section------------------
+
+.hvorfor-sec{
+   
+        .punkter-del{
+            margin-left: 0.5rem;
+       
+
+             img{
+                height:25px;
+                width: 25px;
+                padding-right: 1rem;
+             }
+
+            p{
+            
+                font-size: 20px;
+                  
+            }   
+    }
+
+        .ikon-sec{
+         
+            .ikoner{
+                 @include partial.flex($justify:center);
+                 gap:4rem;
+                 
+                .fa-user-doctor, .fa-staff-snake, .fa-flask{
+                  font-size: 50px;
+                }
+
+                 img{
+                 height: 50px;
+                 width: 50px;
+                  }
+            }
+          
+
+            .ikon-text{
+                gap:10px;
+            
+                p{
+                    font-size: 18px;
+                }
+
+            }   
+    }
+    
+}
 
 
 
 
+// ---------------- produkter section----------------
+    .produkter-sec{
+        flex-wrap: wrap;
+       
+    .styl-pro{
+        
+        @include partial.flex($align:flex-start);
+        flex-direction: column;
+        width:100%;
+       
+        
+
+        div{
+            width:100%;
+
+                img{
+                height:250px;
+                width:100%;
+                object-fit: contain;
+                    }
+
+               
+                #lægikurv{
+                 @include partial.btn($pad:10px 0 10px 0);
+                 margin-left: 0;
+                 width:100%;
+                 box-sizing: border-box;
+                
+                    }
+        }
+       }
+    }
 
 
+// ---------------blog section---------------
 
+    .blog1{
+   
+        @include partial.flex($align:flex-start);
+        flex-direction: column;
+       
+    
+
+    img{
+        height:55vh;
+        width:100%;   
+        object-fit: cover;
+        object-position: top;
+        
+        
+    
+    }
+
+    div{
+        margin-left: 0.5rem;
+        flex-wrap: wrap;
+        
+
+        h2{
+            margin-left: 0.5rem;
+            font-size: 25px;
+                
+        }
+
+        p{
+            margin: 0.5rem;
+           
+        }
+    }
+}
+
+   .blog2og3{
+    
+   @include partial.flex($align:center);
+   flex-direction: column;
+    gap:10px;
+    
+    .blog{
+        @include partial.flex($align:center);
+        flex-direction: column;
+      
+    
+        img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+          }
+
+         div h2{
+            margin-left: 1rem;
+            font-size: 25px;
+            
+    }
+
+          div p{
+            margin-left: 1rem;
+            
+        }
+            .fa-eye{
+                padding-left: 25px;
+                 
+            }
+
+    }  
+    
+   
+}
+
+ #seblogs{
+           
+            left: 30%;
+            right: auto;
+            
+          }
+// -------------------------FAQ-----------------------
+.faq-sec{
+    
+    .faq-container{
+        
+        width:100%;
+       
+            .faq-items {
+               
+                padding: 4rem 0.5rem;
+                font-size: 20px;
+    
+                button{
+            
+                width:100%;
+                font-family: partial.$body-text-font;
+                font-size: 23px;
+                
+            }
+            }      
+            }
+            }
+// ------------------følg os section--------------------
+
+.insta-sec{
 
     
+    div{
+       @include partial.flex($justify:center); 
+       gap: 20px;
+
+       img{
+        height:20vh;
+        
+    }
+
+      p{
+        height:20vh;
+        font-size:18px;
+        
+       }
+       .fa-instagram{
+            font-size: 30px;
+            
+        }
+        }
+        }
+
+// -----------------reviews section--------------------
+.reviews-sec{
+
+
+    .reviews-container{
+        // @include partial.flex($justify:center);
+        
+        overflow-x:auto;
+
+    .review{
+        width:50vw;
+
+     }
+     }
+     }
+// --------------Footer-----------------------
+footer{
+   
+    .styl-brandname{
+           
+
+       img{
+        height: 120px;
+        width: 120px;
+        padding-right: 0.5rem;
+        }
+        
+        h1{
+            font-size: 50px;   
+        }
+    }
+
+    .footer-indhold{
+        
+        @include partial.flex($align:center);
+        flex-direction: column;
+        gap:2rem; 
+    }
+
 }
 
 
@@ -714,3 +1015,4 @@ footer{
 
 
 
+}

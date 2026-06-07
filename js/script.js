@@ -1,5 +1,5 @@
 console.log("Hej world");
-
+// -----------------------FAQ section----------------
 const questions=document.querySelectorAll(".question");
 
 
@@ -46,6 +46,18 @@ function prevReview(){
 
 nextBtn.addEventListener("click", nextReview);
 prevBtn.addEventListener("click", prevReview);
+
+
+// ---------------mobile Navigation-------------
+const bars = document.querySelector("#bars");
+
+const openNav = () => {
+    document.querySelector("nav ul ").classList.toggle("show");
+    document.querySelector("#bars i").classList.toggle("fa-bars");
+    document.querySelector("#bars i").classList.toggle("fa-xmark");
+}
+
+bars.addEventListener("click", openNav);
 
 
 
