@@ -159,40 +159,32 @@ header nav{
             }   
     }
 
-        .ikon-sec{
-          @include partial.flex($align:center);
-          flex-direction: column;
-          margin-top: 3rem;
-
-            .ikoner{
-                 @include partial.flex($justify:center);
-                 gap:150px;
-                 
-                .fa-user-doctor, .fa-staff-snake, .fa-flask{
-                 color:partial.$secondary-color;
-                  font-size: 60px;
-                }
-
-                 img{
-                 height: 60px;
-                width: 60px;
-                  }
-            }
-          
-
-          .ikon-text{
+         .ikoner-sec{
             @include partial.flex($justify:center);
-            gap:20px;
-            
-            p{
-                font-size: 20px;
-                font-family: partial.$body-text-font;
-                color:partial.$text-color;
-            }
+            margin-top: 3rem;
+            gap:2rem;
 
-          }   
-    }
-    
+            .ikon-beskrivelse{
+                 @include partial.flex($align:center);
+                flex-direction: column;
+
+                .fa-user-doctor, .fa-staff-snake, .fa-flask{
+                     color:partial.$secondary-color;
+                    font-size: 60px;
+              }
+
+                p{
+                    font-size: 20px;
+                    font-family: partial.$body-text-font;
+                    color:partial.$text-color;
+                 }
+
+                img{
+                     height: 60px;
+                     width: 60px;
+                  }
+              }
+              }
 }
 
 //--------------------Populære Varer------------------
@@ -281,6 +273,7 @@ header nav{
     border-radius: 10px;
     @include partial.flex($justify:center);
     margin-bottom: 1rem;
+    
 
     img{
         height:60vh;
@@ -335,21 +328,35 @@ header nav{
 
     .blog{
         background-color: partial.$section-color;
-        @include partial.flex($align:center);
+        @include partial.flex($align:flex-start);
         flex-direction: column;
+        margin-top: 0;
         margin-bottom: 2rem;
+        height: 570px;
+        width:700px;
+        
       
+        .styl-img{
+            width:100%;
+            height:315px;
+            
+            
 
-        img{
-        height:50vh;
-        width:90vh;
-        object-fit: cover;
+            img{
+            // height:315px;
+            height:315px;
+            width:100%;
+            object-fit: cover;
+            // display: block;
+            
           }
 
+        }
+        
          div h2{
             margin-left: 2rem;
             color:partial.$secondary-color;
-            font-size: 32px;
+            font-size: 26px;
             font-family: partial.$Heading-font;
     }
 
@@ -704,7 +711,7 @@ footer{
     }
 }
 
- /* tablet og  mobile  */
+ /*--------------- tablet og  mobile------------  */
 @media screen and (max-width:768px){
 
      body main{
@@ -774,36 +781,32 @@ footer{
             }   
     }
 
-        .ikon-sec{
-         
-            .ikoner{
-                 @include partial.flex($justify:center);
-                 gap:4rem;
-                 
-                .fa-user-doctor, .fa-staff-snake, .fa-flask{
-                  font-size: 50px;
-                }
+    
+    .ikoner-sec{
+        gap:1rem;
+
+        .ikon-beskrivelse{
+            
+
+             .fa-user-doctor, .fa-staff-snake, .fa-flask{
+                  
+                  font-size: 40px;
+              }
+
+              p{
+                font-size: 18px;
+                text-align: center;
+    
+                 }
 
                  img{
-                 height: 50px;
-                 width: 50px;
+                  height: 40px;
+                  width: 40px;
                   }
-            }
-          
-
-            .ikon-text{
-                gap:10px;
-            
-                p{
-                    font-size: 18px;
-                }
-
-            }   
-    }
+              }
+              }
     
 }
-
-
 
 
 // ---------------- produkter section----------------
@@ -882,10 +885,14 @@ footer{
    @include partial.flex($align:center);
    flex-direction: column;
     gap:10px;
+  
     
     .blog{
         @include partial.flex($align:center);
         flex-direction: column;
+        width: 100%;
+       
+        
       
     
         img{
@@ -898,14 +905,19 @@ footer{
             margin-left: 1rem;
             font-size: 25px;
             
+            
+            
     }
 
           div p{
             margin-left: 1rem;
             
+            
+            
         }
             .fa-eye{
-                padding-left: 25px;
+                padding-left: 15px;
+                
                  
             }
 
@@ -1009,10 +1021,267 @@ footer{
 
 }
 
+}
+
+/* medium devices (lanscape tablet 768px and up) */
+@media screen and (min-width:768px) and (max-width:1300px){
+
+    body main{
+        margin: 0 3rem;
+        
+    }
+// -------------------header og navigation-----------------
+header nav{
+   
+    padding: 0.3rem 0.3rem;
+
+   
+    img{
+        height:90px;
+        width:90px;
+    }
+    
+    ul{
+        gap:15px;
+      
+        li a{
+
+            font-size: 19px;
+        }
+    }
+
+    .right-ikoner{
+       
+        gap:20px;
+
+        .fa-bag-shopping, .fa-user-lock, .fa-magnifying-glass {
+            font-size: 23px;
+            
+        }
+        
+    }  
+}
+// ---------------hvorfor section-----------------------
+.hvorfor-sec{
+    
+        .punkter-del{
+            margin-left: 2rem;
+       
+
+            p{
+                font-size: 23px;
+           
+            }   
+    }
+
+         .ikoner-sec{
+        
+            gap:1rem;
+
+            .ikon-beskrivelse{
+                
+
+                .fa-user-doctor, .fa-staff-snake, .fa-flask{
+                    font-size: 55px;
+
+              }
+
+                 p{
+                    text-align: center;
+                 }
+
+                 img{
+                     height: 55px;
+                     width: 55px;
+                  }
+              }
+              }
+}
+
+//--------------------Populære Varer------------------
+
+.produkter-sec{
+        
+         flex-shrink: 0;
+         
+          .styl-pro{
+           width:100%;
+        //    flex-shrink: 0;
+            div{
+                @include partial.flex($align:space-between);
+                flex-direction: column;
+                min-height: 580px;
+                width: 100%;
+               
+                img{
+                 height:300px;
+                 width:100%;
+                 object-fit: contain;
+            
+                    }
+
+                 p{
+                  
+                    font-size: 18px;
+                    
+                    }
+
+                #lægikurv{
+                 @include partial.btn(10px 0px 10px 0px);
+                 width:95%;
+                 box-sizing: border-box;
+                 margin-left: 10px;
+                 margin-bottom: 0.5rem;
+                
+                    }
+                
+            }
+          }  
+}
+
+// ---------------------------blog section--------------------------------
+
+.blog1{
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+    min-height:400px;
+
+    img{
+        width:30vw;
+        min-height: 100%;
+        object-fit: cover;
+    
+    }
+
+    
+    div{
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        h2{
+            font-size: 28px ;
+        }
+
+        p{
+            
+            font-size: 18px;
+            margin-bottom: 1rem;
+         
+        }
+    }
+}
 
 
+.blog2og3{
+   flex-shrink: 0;
+   
+    .blog{
+      
+        max-height: 600px;
+        width:700px;
+        margin-top: 0;
+        border-radius: 10px;
+        @include partial.flex($align:space-between);
+        flex-direction: column;
+        
+        .styl-img{
+            width:100%;
+            height:315px;
+        
+        }
+
+        .styl-img img{
+            // height:315px;
+            height:100%;
+            width:100%;
+            object-fit: cover;
+            display: block;
+            
+          }
+        
+        
+         div h2{
+           margin-top: 0;
+            font-size: 26px;
+            
+       }
+
+          div p{
+            font-size: 18px;
+            margin-left: 2rem;
+            margin-top: 0;
+        
+        }
+
+            #blog-info{
+                padding-top:1rem;
+            }
+
+    }      
+}
+
+// ---------------------- FAQ----------------------
+.faq-sec{
+    
+    .faq-container{
+        
+        width:100%;
+       
+            .faq-items {
+               
+                padding: 4rem 2rem;
+                font-size: 20px;
+    
+                button{
+            
+                width:100%;
+                font-size: 23px;
+                
+            }
+            }      
+            }
+            }
+// ------------------følg os section--------------------
+
+.insta-sec{
+
+    
+    div{
+       
+       img{
+         height:30vh;
+        width:20vw;
+        
+        
+    }
+
+      p{
+        height:30vh;
+        width:20vw;
+        font-size:18px;
+        
+       }
+       .fa-instagram{
+            font-size: 30px;
+            
+        }
+        }
+        }
+// ------------------------reviews section---------------------
+
+.reviews-sec{
 
 
+    .reviews-container{
+        
+        overflow-x:auto;
 
+    .review{
+        width:30vw;
 
+     }
+     }
+     }
+
+    
 }

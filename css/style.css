@@ -158,37 +158,31 @@ header nav .right-bar {
   font-size: 25px;
   color: #443A3A;
 }
-.hvorfor-sec .ikon-sec {
+.hvorfor-sec .ikoner-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.hvorfor-sec .ikoner-sec .ikon-beskrivelse {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 3rem;
 }
-.hvorfor-sec .ikon-sec .ikoner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 150px;
-}
-.hvorfor-sec .ikon-sec .ikoner .fa-user-doctor, .hvorfor-sec .ikon-sec .ikoner .fa-staff-snake, .hvorfor-sec .ikon-sec .ikoner .fa-flask {
+.hvorfor-sec .ikoner-sec .ikon-beskrivelse .fa-user-doctor, .hvorfor-sec .ikoner-sec .ikon-beskrivelse .fa-staff-snake, .hvorfor-sec .ikoner-sec .ikon-beskrivelse .fa-flask {
   color: #B62B70;
   font-size: 60px;
 }
-.hvorfor-sec .ikon-sec .ikoner img {
-  height: 60px;
-  width: 60px;
-}
-.hvorfor-sec .ikon-sec .ikon-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.hvorfor-sec .ikon-sec .ikon-text p {
+.hvorfor-sec .ikoner-sec .ikon-beskrivelse p {
   font-size: 20px;
   font-family: "roboto-slab", serif;
   color: #443A3A;
+}
+.hvorfor-sec .ikoner-sec .ikon-beskrivelse img {
+  height: 60px;
+  width: 60px;
 }
 
 .produkter-sec {
@@ -340,20 +334,27 @@ header nav .right-bar {
   background-color: #FFFFFF;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  margin-top: 0;
   margin-bottom: 2rem;
+  height: 570px;
+  width: 700px;
 }
-.blog2og3 .blog img {
-  height: 50vh;
-  width: 90vh;
+.blog2og3 .blog .styl-img {
+  width: 100%;
+  height: 315px;
+}
+.blog2og3 .blog .styl-img img {
+  height: 315px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .blog2og3 .blog div h2 {
   margin-left: 2rem;
   color: #B62B70;
-  font-size: 32px;
+  font-size: 26px;
   font-family: "eb-garamond", serif;
 }
 .blog2og3 .blog div p {
@@ -670,7 +671,7 @@ footer .footer2 .fa-facebook-f, footer .footer2 .fa-instagram {
   margin-right: 0.5rem;
 }
 
-/* tablet og  mobile  */
+/*--------------- tablet og  mobile------------  */
 @media screen and (max-width: 768px) {
   body main {
     margin: 0 1rem;
@@ -714,24 +715,19 @@ footer .footer2 .fa-facebook-f, footer .footer2 .fa-instagram {
   .hvorfor-sec .punkter-del p {
     font-size: 20px;
   }
-  .hvorfor-sec .ikon-sec .ikoner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
+  .hvorfor-sec .ikoner-sec {
+    gap: 1rem;
   }
-  .hvorfor-sec .ikon-sec .ikoner .fa-user-doctor, .hvorfor-sec .ikon-sec .ikoner .fa-staff-snake, .hvorfor-sec .ikon-sec .ikoner .fa-flask {
-    font-size: 50px;
+  .hvorfor-sec .ikoner-sec .ikon-beskrivelse .fa-user-doctor, .hvorfor-sec .ikoner-sec .ikon-beskrivelse .fa-staff-snake, .hvorfor-sec .ikoner-sec .ikon-beskrivelse .fa-flask {
+    font-size: 40px;
   }
-  .hvorfor-sec .ikon-sec .ikoner img {
-    height: 50px;
-    width: 50px;
-  }
-  .hvorfor-sec .ikon-sec .ikon-text {
-    gap: 10px;
-  }
-  .hvorfor-sec .ikon-sec .ikon-text p {
+  .hvorfor-sec .ikoner-sec .ikon-beskrivelse p {
     font-size: 18px;
+    text-align: center;
+  }
+  .hvorfor-sec .ikoner-sec .ikon-beskrivelse img {
+    height: 40px;
+    width: 40px;
   }
   .produkter-sec {
     flex-wrap: wrap;
@@ -809,6 +805,7 @@ footer .footer2 .fa-facebook-f, footer .footer2 .fa-instagram {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
   }
   .blog2og3 .blog img {
     width: 100%;
@@ -825,7 +822,7 @@ footer .footer2 .fa-facebook-f, footer .footer2 .fa-instagram {
     margin-left: 1rem;
   }
   .blog2og3 .blog .fa-eye {
-    padding-left: 25px;
+    padding-left: 15px;
   }
   #seblogs {
     left: 30%;
@@ -879,5 +876,180 @@ footer .footer2 .fa-facebook-f, footer .footer2 .fa-instagram {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+  }
+}
+/* medium devices (lanscape tablet 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  body main {
+    margin: 0 3rem;
+  }
+  header nav {
+    padding: 0.3rem 0.3rem;
+  }
+  header nav img {
+    height: 90px;
+    width: 90px;
+  }
+  header nav ul {
+    gap: 15px;
+  }
+  header nav ul li a {
+    font-size: 19px;
+  }
+  header nav .right-ikoner {
+    gap: 20px;
+  }
+  header nav .right-ikoner .fa-bag-shopping, header nav .right-ikoner .fa-user-lock, header nav .right-ikoner .fa-magnifying-glass {
+    font-size: 23px;
+  }
+  .hvorfor-sec .punkter-del {
+    margin-left: 2rem;
+  }
+  .hvorfor-sec .punkter-del p {
+    font-size: 23px;
+  }
+  .hvorfor-sec .ikoner-sec {
+    gap: 1rem;
+  }
+  .hvorfor-sec .ikoner-sec .ikon-beskrivelse .fa-user-doctor, .hvorfor-sec .ikoner-sec .ikon-beskrivelse .fa-staff-snake, .hvorfor-sec .ikoner-sec .ikon-beskrivelse .fa-flask {
+    font-size: 55px;
+  }
+  .hvorfor-sec .ikoner-sec .ikon-beskrivelse p {
+    text-align: center;
+  }
+  .hvorfor-sec .ikoner-sec .ikon-beskrivelse img {
+    height: 55px;
+    width: 55px;
+  }
+  .produkter-sec {
+    flex-shrink: 0;
+  }
+  .produkter-sec .styl-pro {
+    width: 100%;
+  }
+  .produkter-sec .styl-pro div {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: column;
+    min-height: 580px;
+    width: 100%;
+  }
+  .produkter-sec .styl-pro div img {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .produkter-sec .styl-pro div p {
+    font-size: 18px;
+  }
+  .produkter-sec .styl-pro div #lægikurv {
+    border: solid 2px transparent;
+    border-radius: 10px;
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    color: #443A3A;
+    font-family: "roboto-slab", serif;
+    font-weight: 500;
+  }
+  .produkter-sec .styl-pro div #lægikurv:hover {
+    background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+    color: #FFFFFF;
+  }
+  .produkter-sec .styl-pro div #lægikurv {
+    width: 95%;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-bottom: 0.5rem;
+  }
+  .blog1 {
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+    min-height: 400px;
+  }
+  .blog1 img {
+    width: 30vw;
+    min-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .blog1 div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .blog1 div h2 {
+    font-size: 28px;
+  }
+  .blog1 div p {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  .blog2og3 {
+    flex-shrink: 0;
+  }
+  .blog2og3 .blog {
+    max-height: 600px;
+    width: 700px;
+    margin-top: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: column;
+  }
+  .blog2og3 .blog .styl-img {
+    width: 100%;
+    height: 315px;
+  }
+  .blog2og3 .blog .styl-img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .blog2og3 .blog div h2 {
+    margin-top: 0;
+    font-size: 26px;
+  }
+  .blog2og3 .blog div p {
+    font-size: 18px;
+    margin-left: 2rem;
+    margin-top: 0;
+  }
+  .blog2og3 .blog #blog-info {
+    padding-top: 1rem;
+  }
+  .faq-sec .faq-container {
+    width: 100%;
+  }
+  .faq-sec .faq-container .faq-items {
+    padding: 4rem 2rem;
+    font-size: 20px;
+  }
+  .faq-sec .faq-container .faq-items button {
+    width: 100%;
+    font-size: 23px;
+  }
+  .insta-sec div img {
+    height: 30vh;
+    width: 20vw;
+  }
+  .insta-sec div p {
+    height: 30vh;
+    width: 20vw;
+    font-size: 18px;
+  }
+  .insta-sec div .fa-instagram {
+    font-size: 30px;
+  }
+  .reviews-sec .reviews-container {
+    overflow-x: auto;
+  }
+  .reviews-sec .reviews-container .review {
+    width: 30vw;
   }
 }/*# sourceMappingURL=style.css.map */
