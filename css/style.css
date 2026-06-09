@@ -15,6 +15,23 @@ body h1, body h2 {
   font-weight: 700;
 }
 
+/*Skip to main content code snippet fra:https://www.a11y-collective.com/blog/skip-to-main-content/ */
+.screen-reader-text {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+
+.screen-reader-text:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
 header nav {
   background-color: #FFFFFF;
   border-bottom: solid 15px #ECA6A8;
