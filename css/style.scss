@@ -250,7 +250,8 @@ header nav{
 
                     a{
                         font-size: 15px;
-                        color:partial.$secondary-color;
+                        font-weight: 500;
+                        color:partial.$hover;
                         text-decoration: none;
                     }
                 
@@ -267,7 +268,7 @@ header nav{
                         
                     }
 
-                #lægikurv{
+                .lægikurv{
                  @include partial.btn(10px 200px 10px 200px);
                  margin-left: 1.5rem;
                  margin-bottom: 2rem;
@@ -321,12 +322,13 @@ header nav{
          
             a{
                 text-decoration: none;
-                color:partial.$secondary-color;
+                color:partial.$hover;
+                font-weight: 500;
             }
   
         }
 
-        #blog-info{
+        .blog-info{
                 color:rgb(199, 197, 197); 
             }
 
@@ -389,12 +391,13 @@ header nav{
          
             a{
                 text-decoration: none;
-                color:partial.$secondary-color;
+                color:partial.$hover;
+                font-weight: 500;
             }
   
         }
 
-            #blog-info{
+            div.blog-info{
                 color:rgb(199, 197, 197); 
                 padding-top: 2rem;
             }
@@ -695,7 +698,7 @@ footer{
             font-family: partial.$body-text-font;
         }
 
-        h4{
+        h2{
             font-size: 25px;
             font-family: partial.$Heading-font;
             font-style: normal;
@@ -731,7 +734,7 @@ footer{
     }
 }
 
- /*--------------- tablet og  mobile------------  */
+ /*--------------- tablet og  mobile----------------------  */
 @media screen and (max-width:768px){
 
      body main{
@@ -851,7 +854,7 @@ footer{
                     }
 
                
-                #lægikurv{
+                .lægikurv{
                  @include partial.btn($pad:10px 0 10px 0);
                  margin-left: 0;
                  width:100%;
@@ -1146,7 +1149,7 @@ header nav{
                     
                     }
 
-                #lægikurv{
+                .lægikurv{
                  @include partial.btn(10px 0px 10px 0px);
                  width:95%;
                  box-sizing: border-box;

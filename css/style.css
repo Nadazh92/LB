@@ -108,7 +108,7 @@ header nav .right-bar {
 .hero-sec a {
   border: solid 2px transparent;
   border-radius: 10px;
-  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
   text-align: center;
   padding: 10px 30px 10px 30px;
   text-decoration: none;
@@ -117,7 +117,7 @@ header nav .right-bar {
   font-weight: 500;
 }
 .hero-sec a:hover {
-  background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  background: linear-gradient(#1E7B3A, #1E7B3A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
   color: #FFFFFF;
 }
 .hero-sec a {
@@ -249,7 +249,8 @@ header nav .right-bar {
 }
 .produkter-sec .styl-pro div p a {
   font-size: 15px;
-  color: #B62B70;
+  font-weight: 500;
+  color: #1E7B3A;
   text-decoration: none;
 }
 .produkter-sec .styl-pro div span {
@@ -261,10 +262,10 @@ header nav .right-bar {
   color: #B62B70;
   font-size: 25px;
 }
-.produkter-sec .styl-pro div #lægikurv {
+.produkter-sec .styl-pro div .lægikurv {
   border: solid 2px transparent;
   border-radius: 10px;
-  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
   text-align: center;
   padding: 10px 200px 10px 200px;
   text-decoration: none;
@@ -272,18 +273,18 @@ header nav .right-bar {
   font-family: "roboto-slab", serif;
   font-weight: 500;
 }
-.produkter-sec .styl-pro div #lægikurv:hover {
-  background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+.produkter-sec .styl-pro div .lægikurv:hover {
+  background: linear-gradient(#1E7B3A, #1E7B3A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
   color: #FFFFFF;
 }
-.produkter-sec .styl-pro div #lægikurv {
+.produkter-sec .styl-pro div .lægikurv {
   margin-left: 1.5rem;
   margin-bottom: 2rem;
 }
 .produkter-sec #seAlle {
   border: solid 2px transparent;
   border-radius: 10px;
-  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
   text-align: center;
   padding: 5px 40px 5px 40px;
   text-decoration: none;
@@ -292,7 +293,7 @@ header nav .right-bar {
   font-weight: 500;
 }
 .produkter-sec #seAlle:hover {
-  background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  background: linear-gradient(#1E7B3A, #1E7B3A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
   color: #FFFFFF;
 }
 .produkter-sec #seAlle {
@@ -331,9 +332,10 @@ header nav .right-bar {
 }
 .blog1 div p a {
   text-decoration: none;
-  color: #B62B70;
+  color: #1E7B3A;
+  font-weight: 500;
 }
-.blog1 div #blog-info {
+.blog1 div .blog-info {
   color: rgb(199, 197, 197);
 }
 .blog1 div .fa-eye {
@@ -382,9 +384,10 @@ header nav .right-bar {
 }
 .blog2og3 .blog div p a {
   text-decoration: none;
-  color: #B62B70;
+  color: #1E7B3A;
+  font-weight: 500;
 }
-.blog2og3 .blog #blog-info {
+.blog2og3 .blog div.blog-info {
   color: rgb(199, 197, 197);
   padding-top: 2rem;
 }
@@ -395,7 +398,7 @@ header nav .right-bar {
 #seblogs {
   border: solid 2px transparent;
   border-radius: 10px;
-  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
   text-align: center;
   padding: 5px 40px 5px 40px;
   text-decoration: none;
@@ -404,7 +407,7 @@ header nav .right-bar {
   font-weight: 500;
 }
 #seblogs:hover {
-  background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  background: linear-gradient(#1E7B3A, #1E7B3A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
   color: #FFFFFF;
 }
 #seblogs {
@@ -498,7 +501,7 @@ header nav .right-bar {
 .faq-sec #seFAQ {
   border: solid 2px transparent;
   border-radius: 10px;
-  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
   text-align: center;
   padding: 5px 40px 5px 40px;
   text-decoration: none;
@@ -507,7 +510,7 @@ header nav .right-bar {
   font-weight: 500;
 }
 .faq-sec #seFAQ:hover {
-  background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  background: linear-gradient(#1E7B3A, #1E7B3A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
   color: #FFFFFF;
 }
 .faq-sec #seFAQ {
@@ -538,7 +541,7 @@ header nav .right-bar {
      object-fit: cover;
   border: solid 2px transparent;
   border-radius: 10px;
-  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
 }
 .insta-sec p {
   height: 50vh;
@@ -554,7 +557,7 @@ header nav .right-bar {
   flex-direction: column;
   border: solid 2px transparent;
   border-radius: 10px;
-  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
 }
 .insta-sec .fa-instagram {
   font-size: 50px;
@@ -659,7 +662,7 @@ footer .footer-indhold p {
   font-size: 18px;
   font-family: "roboto-slab", serif;
 }
-footer .footer-indhold h4 {
+footer .footer-indhold h2 {
   font-size: 25px;
   font-family: "eb-garamond", serif;
   font-style: normal;
@@ -688,7 +691,7 @@ footer .footer2 .fa-facebook-f, footer .footer2 .fa-instagram {
   margin-right: 0.5rem;
 }
 
-/*--------------- tablet og  mobile------------  */
+/*--------------- tablet og  mobile----------------------  */
 @media screen and (max-width: 768px) {
   body main {
     margin: 0 1rem;
@@ -765,10 +768,10 @@ footer .footer2 .fa-facebook-f, footer .footer2 .fa-instagram {
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .produkter-sec .styl-pro div #lægikurv {
+  .produkter-sec .styl-pro div .lægikurv {
     border: solid 2px transparent;
     border-radius: 10px;
-    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
     text-align: center;
     padding: 10px 0 10px 0;
     text-decoration: none;
@@ -776,11 +779,11 @@ footer .footer2 .fa-facebook-f, footer .footer2 .fa-instagram {
     font-family: "roboto-slab", serif;
     font-weight: 500;
   }
-  .produkter-sec .styl-pro div #lægikurv:hover {
-    background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  .produkter-sec .styl-pro div .lægikurv:hover {
+    background: linear-gradient(#1E7B3A, #1E7B3A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
     color: #FFFFFF;
   }
-  .produkter-sec .styl-pro div #lægikurv {
+  .produkter-sec .styl-pro div .lægikurv {
     margin-left: 0;
     width: 100%;
     box-sizing: border-box;
@@ -961,10 +964,10 @@ footer .footer2 .fa-facebook-f, footer .footer2 .fa-instagram {
   .produkter-sec .styl-pro div p {
     font-size: 18px;
   }
-  .produkter-sec .styl-pro div #lægikurv {
+  .produkter-sec .styl-pro div .lægikurv {
     border: solid 2px transparent;
     border-radius: 10px;
-    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
     text-align: center;
     padding: 10px 0px 10px 0px;
     text-decoration: none;
@@ -972,11 +975,11 @@ footer .footer2 .fa-facebook-f, footer .footer2 .fa-instagram {
     font-family: "roboto-slab", serif;
     font-weight: 500;
   }
-  .produkter-sec .styl-pro div #lægikurv:hover {
-    background: linear-gradient(#15572A, #15572A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #15572A) border-box;
+  .produkter-sec .styl-pro div .lægikurv:hover {
+    background: linear-gradient(#1E7B3A, #1E7B3A) padding-box, linear-gradient(90deg, #ECA6A8, #B62B70, #1E7B3A) border-box;
     color: #FFFFFF;
   }
-  .produkter-sec .styl-pro div #lægikurv {
+  .produkter-sec .styl-pro div .lægikurv {
     width: 95%;
     box-sizing: border-box;
     margin-left: 10px;
