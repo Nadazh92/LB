@@ -387,7 +387,7 @@ header nav .right-bar {
   color: #1E7B3A;
   font-weight: 500;
 }
-.blog2og3 .blog div.blog-info {
+.blog2og3 .blog .blog-info {
   color: rgb(199, 197, 197);
   padding-top: 2rem;
 }
@@ -624,6 +624,21 @@ header nav .right-bar {
 .reviews-sec .reviews-container .review .author {
   color: #B62B70;
   font-weight: 500;
+}
+
+.styl-toTop {
+  background-color: #B62B70;
+  border: none;
+  border-radius: 30%;
+  padding: 10px 10px;
+  margin-top: 2rem;
+  position: fixed;
+  left: auto;
+  right: 1rem;
+}
+.styl-toTop .fa-angle-up {
+  color: #FFFFFF;
+  font-size: 25px;
 }
 
 footer {
